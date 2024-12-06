@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Lib/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="Lib/FomtAwsome/css/all.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="site-content container">
+      <nav class="navbar navbar-expand-lg .bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand text-info bold" href="#">Weather</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-0" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active home-btn" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Live Carmers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="main">
+        <div class="container mx-auto py-5">
+          <!-- <form class="find-location"> -->
+
+          <div class="row">
+            <div class="col-md-9 mx-auto">
+              <input
+                class="form-control col-md-9"
+                type="text"
+                placeholder="Find your location..."
+                id="search"
+                value=""
+              />
+            </div>
+
+            <input
+              class="col-md-1 mx-auto"
+              type="button"
+              onclick="liveDisplay()"
+              value="Find"
+              id="submit"
+            />
+          </div>
+
+          <!-- </form> -->
+        </div>
+      </section>
+
+      <section class="Weather-sec p-5">
+        <div class="container">
+          <div class="row" id="weatherCards">
+            <div class="col-md-4">
+              <div class="forcast-Header d-flex space-between">
+                <h6 class="me-auto">Tuesday</h6>
+                <h6 class="ms-auto">4 Dec</h6>
+              </div>
+              <div class="forecast-content" id="current">
+                <div class="location py-5">Cairo</div>
+                <div class="degree">
+                  <div class="num h1">16.3<sup>o</sup>C</div>
+
+                  <div class="forecast-icon">
+                    <img
+                      src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+                      alt=""
+                      width="90"
+                    />
+                  </div>
+                </div>
+                <div class="custom">Clear</div>
+                <span class="m-4"><img src="images/icon-umberella.png" alt="" />20%</span>
+                <span class="m-4"><img src="images/icon-wind.png" alt="" />18km/h</span>
+                <span class="m-4"><img src="images/icon-compass.png" alt="" />East</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 " >
+              <div class="forcast-Header d-flex space-between">
+                <h6 class="mx-auto">Tuesday</h6>
+                
+              </div>
+              <div class="forecast-content center " id="center">
+                <div class="location py-5">Cairo</div>
+                <div class="degree">
+                  <div class="num h1">16.3<sup>o</sup>C</div>
+
+                  <div class="forecast-des text-center">
+                    <h6>Sunny</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 cards">
+              <div class="forcast-Header d-flex space-between">
+                <h6 class="mx-auto">Tuesday</h6>
+              </div>
+              <div class="forecast-content" id="current">
+                <div class="location py-5">Cairo</div>
+                <div class="degree">
+                  <div class="num h1">16.3<sup>o</sup>C</div>
+
+                  <div class="forecast-des text-center">
+                    <h6>Sunny</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="footer container-fluid py-5">
+        <div class="text-center py-5">
+          <h6>Copyright 2014 Company name. Designed by Themezy. All rights reserved</h6>
+        </div>
+      </div>
+    </div>
+    <script src="Lib/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Lib/FomtAwsome/js/all.js"></script>
+    <script src="JS/Index.js"></script>
+  </body>
+</html>

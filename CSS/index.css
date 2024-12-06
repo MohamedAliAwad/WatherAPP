@@ -1,0 +1,51 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+
+.navbar .navbar-nav .home-btn{
+    border: 1px solid #009ad8;
+    border-radius: 30%;
+    color: #009ad8;
+}
+
+.forcast-Header
+{
+        background: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: center;
+        font-weight: 400;
+}
+
+.num{
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+
+.forecast-container .forecast.today span {
+    margin-right: 20px;
+}
+
+.forecast-content{
+    background-color: rgb(50,53,68);
+   
+}
+
+
+.center{
+    background-color: #262936;
+    aspect-ratio: 3;
+}
+
+.footer{
+    background-color: rgb(38,41,54);
+}
